@@ -289,9 +289,9 @@
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
 "@cdktf/provider-project@^0.1.43":
-  version "0.1.43"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.43.tgz#168497c4bea174a7388f510018c7a6a82c8eaed4"
-  integrity sha512-OUNHXVfW3O4TMPAhPvmiEIUPA4XHIyFjq9lWeYzalb9uP8cDe/PYYr2Syp5Y74lIBrdjhD7IWApUL124WFtRXQ==
+  version "0.1.46"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.1.46.tgz#c4f6658d8b161666157f650c9ea5cf10a173f9b9"
+  integrity sha512-LEbg6554py/8XmK5Pa46+IerIiSLHdb/I9+gAaih+aBDfjrCHaG64QKxdYbO+J2vxh1u2M1GrdKhQN8UK+AFeg==
   dependencies:
     change-case "^4.1.2"
 
