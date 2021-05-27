@@ -4,8 +4,8 @@
 
 Name|Description
 ----|-----------
-[DataExternal](#cdktf-provider-external-dataexternal)|*No description*
-[ExternalProvider](#cdktf-provider-external-externalprovider)|*No description*
+[DataExternal](#cdktf-provider-external-dataexternal)|Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}.
+[ExternalProvider](#cdktf-provider-external-externalprovider)|Represents a {@link https://www.terraform.io/docs/providers/external external}.
 
 
 **Structs**
@@ -19,7 +19,7 @@ Name|Description
 
 ## class DataExternal  <a id="cdktf-provider-external-dataexternal"></a>
 
-
+Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -27,14 +27,14 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-
+Create a new {@link https://www.terraform.io/docs/providers/external/d/external.html external} Data Source.
 
 ```ts
 new DataExternal(scope: Construct, id: string, config: DataExternalConfig)
 ```
 
-* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[DataExternalConfig](#cdktf-provider-external-dataexternalconfig)</code>)  *No description*
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -42,7 +42,7 @@ new DataExternal(scope: Construct, id: string, config: DataExternalConfig)
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **program** (<code>Array<string></code>)  A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. 
   * **query** (<code>Map<string, string></code>)  A map of string values to pass to the external program as the query arguments. __*Optional*__
-  * **workingDir** (<code>string</code>)  Working directory of the program. __*Optional*__
+  * **workingDir** (<code>string</code>)  Working directory of the program. If not supplied, the program will run in the current directory. __*Optional*__
 
 
 
@@ -115,7 +115,7 @@ __Returns__:
 
 ## class ExternalProvider  <a id="cdktf-provider-external-externalprovider"></a>
 
-
+Represents a {@link https://www.terraform.io/docs/providers/external external}.
 
 __Implements__: [IConstruct](#constructs-iconstruct)
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
@@ -123,14 +123,14 @@ __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 ### Initializer
 
 
-
+Create a new {@link https://www.terraform.io/docs/providers/external external} Resource.
 
 ```ts
 new ExternalProvider(scope: Construct, id: string, config?: ExternalProviderConfig)
 ```
 
-* **scope** (<code>[Construct](#constructs-construct)</code>)  *No description*
-* **id** (<code>string</code>)  *No description*
+* **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
+* **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[ExternalProviderConfig](#cdktf-provider-external-externalproviderconfig)</code>)  *No description*
   * **alias** (<code>string</code>)  Alias name. __*Optional*__
 
@@ -188,7 +188,7 @@ Name | Type | Description
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
 **query**? | <code>Map<string, string></code> | A map of string values to pass to the external program as the query arguments.<br/>__*Optional*__
-**workingDir**? | <code>string</code> | Working directory of the program.<br/>__*Optional*__
+**workingDir**? | <code>string</code> | Working directory of the program. If not supplied, the program will run in the current directory.<br/>__*Optional*__
 
 
 

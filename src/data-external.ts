@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/external/r/data_external.html
+// https://www.terraform.io/docs/providers/external/d/external.html
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,22 +7,42 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
-  /** A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces. */
+  /**
+  * A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external.html#program DataExternal#program}
+  */
   readonly program: string[];
-  /** A map of string values to pass to the external program as the query arguments. If not supplied, the program will receive an empty object as its input. */
+  /**
+  * A map of string values to pass to the external program as the query arguments. If not supplied, the program will receive an empty object as its input.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external.html#query DataExternal#query}
+  */
   readonly query?: { [key: string]: string };
-  /** Working directory of the program. If not supplied, the program will run in the current directory. */
+  /**
+  * Working directory of the program. If not supplied, the program will run in the current directory.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external.html#working_dir DataExternal#working_dir}
+  */
   readonly workingDir?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}
+*/
 export class DataExternal extends cdktf.TerraformDataSource {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/external/d/external.html external} Data Source
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options DataExternalConfig
+  */
   public constructor(scope: Construct, id: string, config: DataExternalConfig) {
     super(scope, id, {
       terraformResourceType: 'external',
