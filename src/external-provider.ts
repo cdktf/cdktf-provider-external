@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/external/r/external_provider.html
+// https://www.terraform.io/docs/providers/external
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -7,18 +7,30 @@ import * as cdktf from 'cdktf';
 // Configuration
 
 export interface ExternalProviderConfig {
-  /** Alias name */
+  /**
+  * Alias name
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external#alias ExternalProvider#alias}
+  */
   readonly alias?: string;
 }
 
-// Resource
-
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/external external}
+*/
 export class ExternalProvider extends cdktf.TerraformProvider {
 
   // ===========
   // INITIALIZER
   // ===========
 
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/external external} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options ExternalProviderConfig = {}
+  */
   public constructor(scope: Construct, id: string, config: ExternalProviderConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'external',
