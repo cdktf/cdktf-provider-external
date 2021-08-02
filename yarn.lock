@@ -423,10 +423,10 @@
     "@types/node-fetch" "^2.5.8"
     node-fetch "^2.6.1"
 
-"@cdktf/provider-project@^0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.0.tgz#7901597bf9816a188d9ab3af6d483403ed076848"
-  integrity sha512-nlwKV+ML2Zkhv+YJO1jCVDFukJ7QcELAKjD8G1Ua7xjWQ/rbujZaULS8Ao/VMhdhTUtfcAKYD3aeEQ0uD0n+4w==
+"@cdktf/provider-project@^0.2.2":
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/@cdktf/provider-project/-/provider-project-0.2.2.tgz#8ea52df6a9141cbede83a00ab1a86c05e45861cd"
+  integrity sha512-qqgmzmeFrtOyYivsvCPPlVJi+b07ECBJ0B2FHbE08KkE12nkQlIQuvITn6htoT1XNaBR9H/EnAXKAzyDs+6ojA==
   dependencies:
     change-case "^4.1.2"
 
@@ -1015,10 +1015,15 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-14.6.2.tgz#264b44c5a28dfa80198fc2f7b6d3c8a054b9491f"
   integrity sha512-onlIwbaeqvZyniGPfdw/TEhKIh79pz66L1q06WUQqJLnAb6wbjvOtepLYTGHTqzdXgBYIE3ZdmqHDGsRsbBz7A==
 
-"@types/node@^10.1.0", "@types/node@^10.17.0":
+"@types/node@^10.1.0":
   version "10.17.60"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.17.60.tgz#35f3d6213daed95da7f0f73e75bcc6980e90597b"
   integrity sha512-F0KIgDJfy2nA3zMLmWGKxcH2ZVEtCZXHHdOQs2gSaQ27+lNeEfGxzkIw90aXswATX7AZ33tahPbzy6KAfUreVw==
+
+"@types/node@^12.0.0":
+  version "12.20.18"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-12.20.18.tgz#37a0aab0560d1186da54ee5d62ff6a78cacb8c75"
+  integrity sha512-YoTiIwdKxM3VLiY2sM05x4iGuTveYiCcDaUVmo1L5ndrXxPGW/NEoZu+pGcBirziomizcZsnsQoemikKcB2fRA==
 
 "@types/normalize-package-data@^2.4.0":
   version "2.4.0"
