@@ -18,7 +18,7 @@ export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external.html#query DataExternal#query}
   */
-  readonly query?: { [key: string]: string };
+  readonly query?: { [key: string]: string } | cdktf.IResolvable;
   /**
   * Working directory of the program. If not supplied, the program will run in the current directory.
   * 
@@ -31,6 +31,11 @@ export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
 * Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}
 */
 export class DataExternal extends cdktf.TerraformDataSource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "external";
 
   // ===========
   // INITIALIZER
@@ -82,11 +87,11 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // query - computed: false, optional: true, required: false
-  private _query?: { [key: string]: string };
+  private _query?: { [key: string]: string } | cdktf.IResolvable;
   public get query() {
     return this.interpolationForAttribute('query') as any;
   }
-  public set query(value: { [key: string]: string } ) {
+  public set query(value: { [key: string]: string } | cdktf.IResolvable ) {
     this._query = value;
   }
   public resetQuery() {
