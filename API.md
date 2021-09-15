@@ -21,7 +21,7 @@ Name|Description
 
 Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}.
 
-__Implements__: [IConstruct](#constructs-iconstruct), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -41,7 +41,7 @@ new DataExternal(scope: Construct, id: string, config: DataExternalConfig)
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
   * **program** (<code>Array<string></code>)  A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. 
-  * **query** (<code>Map<string, string></code>)  A map of string values to pass to the external program as the query arguments. __*Optional*__
+  * **query** (<code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code>)  A map of string values to pass to the external program as the query arguments. __*Optional*__
   * **workingDir** (<code>string</code>)  Working directory of the program. If not supplied, the program will run in the current directory. __*Optional*__
 
 
@@ -54,10 +54,11 @@ Name | Type | Description
 **id** | <code>string</code> | <span></span>
 **program** | <code>Array<string></code> | <span></span>
 **programInput** | <code>Array<string></code> | <span></span>
-**query** | <code>Map<string, string></code> | <span></span>
+**query** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
 **workingDir** | <code>string</code> | <span></span>
-**queryInput**? | <code>Map<string, string></code> | __*Optional*__
+**queryInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 **workingDirInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -117,7 +118,7 @@ __Returns__:
 
 Represents a {@link https://www.terraform.io/docs/providers/external external}.
 
-__Implements__: [IConstruct](#constructs-iconstruct)
+__Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 
 ### Initializer
@@ -143,6 +144,7 @@ Name | Type | Description
 -----|------|-------------
 **alias**? | <code>string</code> | __*Optional*__
 **aliasInput**? | <code>string</code> | __*Optional*__
+*static* **tfResourceType** | <code>string</code> | <span></span>
 
 ### Methods
 
@@ -187,7 +189,7 @@ Name | Type | Description
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
-**query**? | <code>Map<string, string></code> | A map of string values to pass to the external program as the query arguments.<br/>__*Optional*__
+**query**? | <code>Map<string, string> &#124; [IResolvable](#cdktf-iresolvable)</code> | A map of string values to pass to the external program as the query arguments.<br/>__*Optional*__
 **workingDir**? | <code>string</code> | Working directory of the program. If not supplied, the program will run in the current directory.<br/>__*Optional*__
 
 

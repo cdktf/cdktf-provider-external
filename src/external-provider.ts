@@ -20,6 +20,11 @@ export interface ExternalProviderConfig {
 */
 export class ExternalProvider extends cdktf.TerraformProvider {
 
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType: string = "external";
+
   // ===========
   // INITIALIZER
   // ===========
