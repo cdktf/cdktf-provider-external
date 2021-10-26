@@ -36,7 +36,7 @@ new DataExternal(scope: Construct, id: string, config: DataExternalConfig)
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
 * **config** (<code>[DataExternalConfig](#cdktf-provider-external-dataexternalconfig)</code>)  *No description*
-  * **count** (<code>number</code>)  *No description* __*Optional*__
+  * **count** (<code>number &#124; [IResolvable](#cdktf-iresolvable)</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
   * **lifecycle** (<code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code>)  *No description* __*Optional*__
   * **provider** (<code>[TerraformProvider](#cdktf-terraformprovider)</code>)  *No description* __*Optional*__
@@ -53,10 +53,10 @@ Name | Type | Description
 -----|------|-------------
 **id** | <code>string</code> | <span></span>
 **program** | <code>Array<string></code> | <span></span>
-**programInput** | <code>Array<string></code> | <span></span>
-**query** | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | <span></span>
-**workingDir** | <code>string</code> | <span></span>
+**programInput**? | <code>Array<string></code> | __*Optional*__
+**query**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
 **queryInput**? | <code>[IResolvable](#cdktf-iresolvable) &#124; Map<string, string></code> | __*Optional*__
+**workingDir**? | <code>string</code> | __*Optional*__
 **workingDirInput**? | <code>string</code> | __*Optional*__
 *static* **tfResourceType** | <code>string</code> | <span></span>
 
@@ -185,7 +185,7 @@ __Returns__:
 Name | Type | Description 
 -----|------|-------------
 **program** | <code>Array<string></code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program.
-**count**?🔹 | <code>number</code> | __*Optional*__
+**count**?🔹 | <code>number &#124; [IResolvable](#cdktf-iresolvable)</code> | __*Optional*__
 **dependsOn**?🔹 | <code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code> | __*Optional*__
 **lifecycle**?🔹 | <code>[TerraformResourceLifecycle](#cdktf-terraformresourcelifecycle)</code> | __*Optional*__
 **provider**?🔹 | <code>[TerraformProvider](#cdktf-terraformprovider)</code> | __*Optional*__
