@@ -74,7 +74,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // program - computed: false, optional: false, required: true
-  private _program: string[];
+  private _program?: string[]; 
   public get program() {
     return this.getListAttribute('program');
   }
@@ -87,11 +87,12 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // query - computed: false, optional: true, required: false
-  private _query?: { [key: string]: string } | cdktf.IResolvable;
+  private _query?: { [key: string]: string } | cdktf.IResolvable | undefined; 
   public get query() {
+    // Getting the computed value is not yet implemented
     return this.interpolationForAttribute('query') as any;
   }
-  public set query(value: { [key: string]: string } | cdktf.IResolvable ) {
+  public set query(value: { [key: string]: string } | cdktf.IResolvable | undefined) {
     this._query = value;
   }
   public resetQuery() {
@@ -108,11 +109,11 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // working_dir - computed: false, optional: true, required: false
-  private _workingDir?: string;
+  private _workingDir?: string | undefined; 
   public get workingDir() {
     return this.getStringAttribute('working_dir');
   }
-  public set workingDir(value: string ) {
+  public set workingDir(value: string | undefined) {
     this._workingDir = value;
   }
   public resetWorkingDir() {
