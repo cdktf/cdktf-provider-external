@@ -4,7 +4,7 @@
 
 Name|Description
 ----|-----------
-[DataExternal](#cdktf-provider-external-dataexternal)|Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}.
+[DataExternal](#cdktf-provider-external-dataexternal)|Represents a {@link https://www.terraform.io/docs/providers/external/d/external external}.
 [ExternalProvider](#cdktf-provider-external-externalprovider)|Represents a {@link https://www.terraform.io/docs/providers/external external}.
 
 
@@ -19,7 +19,7 @@ Name|Description
 
 ## class DataExternal  <a id="cdktf-provider-external-dataexternal"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/external/d/external.html external}.
+Represents a {@link https://www.terraform.io/docs/providers/external/d/external external}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable)
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
@@ -27,7 +27,7 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 ### Initializer
 
 
-Create a new {@link https://www.terraform.io/docs/providers/external/d/external.html external} Data Source.
+Create a new {@link https://www.terraform.io/docs/providers/external/d/external external} Data Source.
 
 ```ts
 new DataExternal(scope: Construct, id: string, config: DataExternalConfig)
