@@ -18,7 +18,7 @@ export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#query DataExternal#query}
   */
-  readonly query?: { [key: string]: string } | cdktf.IResolvable;
+  readonly query?: { [key: string]: string };
   /**
   * Working directory of the program. If not supplied, the program will run in the current directory.
   * 
@@ -87,12 +87,11 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // query - computed: false, optional: true, required: false
-  private _query?: { [key: string]: string } | cdktf.IResolvable; 
+  private _query?: { [key: string]: string }; 
   public get query() {
-    // Getting the computed value is not yet implemented
-    return this.interpolationForAttribute('query') as any;
+    return this.getStringMapAttribute('query');
   }
-  public set query(value: { [key: string]: string } | cdktf.IResolvable) {
+  public set query(value: { [key: string]: string }) {
     this._query = value;
   }
   public resetQuery() {
@@ -104,7 +103,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   }
 
   // result - computed: true, optional: false, required: false
-  public result(key: string): string {
+  public result(key: string): string | cdktf.IResolvable {
     return new cdktf.StringMap(this, 'result').lookup(key);
   }
 
@@ -131,7 +130,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       program: cdktf.listMapper(cdktf.stringToTerraform)(this._program),
-      query: cdktf.hashMapper(cdktf.anyToTerraform)(this._query),
+      query: cdktf.hashMapper(cdktf.stringToTerraform)(this._query),
       working_dir: cdktf.stringToTerraform(this._workingDir),
     };
   }
