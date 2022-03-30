@@ -35,7 +35,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "external";
+  public static readonly tfResourceType = "external";
 
   // ===========
   // INITIALIZER
@@ -52,7 +52,9 @@ export class DataExternal extends cdktf.TerraformDataSource {
     super(scope, id, {
       terraformResourceType: 'external',
       terraformGeneratorMetadata: {
-        providerName: 'external'
+        providerName: 'external',
+        providerVersion: '2.2.2',
+        providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
