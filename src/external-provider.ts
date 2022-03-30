@@ -23,7 +23,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType: string = "external";
+  public static readonly tfResourceType = "external";
 
   // ===========
   // INITIALIZER
@@ -41,6 +41,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'external',
       terraformGeneratorMetadata: {
         providerName: 'external',
+        providerVersion: '2.2.2',
         providerVersionConstraint: '~> 2.1'
       },
       terraformProviderSource: 'external'
