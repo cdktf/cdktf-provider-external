@@ -66,7 +66,10 @@ export class DataExternal extends cdktf.TerraformDataSource {
       provider: config.provider,
       dependsOn: config.dependsOn,
       count: config.count,
-      lifecycle: config.lifecycle
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
     });
     this._id = config.id;
     this._program = config.program;
@@ -152,7 +155,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      program: cdktf.listMapper(cdktf.stringToTerraform)(this._program),
+      program: cdktf.listMapper(cdktf.stringToTerraform, false)(this._program),
       query: cdktf.hashMapper(cdktf.stringToTerraform)(this._query),
       working_dir: cdktf.stringToTerraform(this._workingDir),
     };
