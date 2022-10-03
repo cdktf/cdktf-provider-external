@@ -4,24 +4,26 @@
 
 Name|Description
 ----|-----------
-[DataExternal](#cdktf-provider-external-dataexternal)|Represents a {@link https://www.terraform.io/docs/providers/external/d/external external}.
-[ExternalProvider](#cdktf-provider-external-externalprovider)|Represents a {@link https://www.terraform.io/docs/providers/external external}.
+[dataExternal.DataExternal](#cdktf-provider-external-dataexternal-dataexternal)|Represents a {@link https://www.terraform.io/docs/providers/external/d/external external}.
+[provider.ExternalProvider](#cdktf-provider-external-provider-externalprovider)|Represents a {@link https://www.terraform.io/docs/providers/external external}.
 
 
 **Structs**
 
 Name|Description
 ----|-----------
-[DataExternalConfig](#cdktf-provider-external-dataexternalconfig)|*No description*
-[ExternalProviderConfig](#cdktf-provider-external-externalproviderconfig)|*No description*
+[dataExternal.DataExternalConfig](#cdktf-provider-external-dataexternal-dataexternalconfig)|*No description*
+[provider.ExternalProviderConfig](#cdktf-provider-external-provider-externalproviderconfig)|*No description*
 
 
 
-## class DataExternal  <a id="cdktf-provider-external-dataexternal"></a>
+## class DataExternal  <a id="cdktf-provider-external-dataexternal-dataexternal"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/external/d/external external}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable), [ITerraformResource](#cdktf-iterraformresource), [ITerraformDependable](#cdktf-iterraformdependable), [ITerraformAddressable](#cdktf-iterraformaddressable), [IInterpolatingParent](#cdktf-iinterpolatingparent)
+__Submodule__: dataExternal
+
 __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 
 ### Initializer
@@ -30,12 +32,12 @@ __Extends__: [TerraformDataSource](#cdktf-terraformdatasource)
 Create a new {@link https://www.terraform.io/docs/providers/external/d/external external} Data Source.
 
 ```ts
-new DataExternal(scope: Construct, id: string, config: DataExternalConfig)
+new dataExternal.DataExternal(scope: Construct, id: string, config: DataExternalConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[DataExternalConfig](#cdktf-provider-external-dataexternalconfig)</code>)  *No description*
+* **config** (<code>[dataExternal.DataExternalConfig](#cdktf-provider-external-dataexternal-dataexternalconfig)</code>)  *No description*
   * **connection** (<code>[SSHProvisionerConnection](#cdktf-sshprovisionerconnection) &#124; [WinrmProvisionerConnection](#cdktf-winrmprovisionerconnection)</code>)  *No description* __*Optional*__
   * **count** (<code>number</code>)  *No description* __*Optional*__
   * **dependsOn** (<code>Array<[ITerraformDependable](#cdktf-iterraformdependable)></code>)  *No description* __*Optional*__
@@ -69,7 +71,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetId() <a id="cdktf-provider-external-dataexternal-resetid"></a>
+#### resetId() <a id="cdktf-provider-external-dataexternal-dataexternal-resetid"></a>
 
 
 
@@ -81,7 +83,7 @@ resetId(): void
 
 
 
-#### resetQuery() <a id="cdktf-provider-external-dataexternal-resetquery"></a>
+#### resetQuery() <a id="cdktf-provider-external-dataexternal-dataexternal-resetquery"></a>
 
 
 
@@ -93,7 +95,7 @@ resetQuery(): void
 
 
 
-#### resetWorkingDir() <a id="cdktf-provider-external-dataexternal-resetworkingdir"></a>
+#### resetWorkingDir() <a id="cdktf-provider-external-dataexternal-dataexternal-resetworkingdir"></a>
 
 
 
@@ -105,7 +107,7 @@ resetWorkingDir(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-external-dataexternal-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-external-dataexternal-dataexternal-synthesizeattributes"></a>
 
 
 
@@ -119,11 +121,13 @@ __Returns__:
 
 
 
-## class ExternalProvider  <a id="cdktf-provider-external-externalprovider"></a>
+## class ExternalProvider  <a id="cdktf-provider-external-provider-externalprovider"></a>
 
 Represents a {@link https://www.terraform.io/docs/providers/external external}.
 
 __Implements__: [IConstruct](#constructs-iconstruct), [IDependable](#constructs-idependable)
+__Submodule__: provider
+
 __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 
 ### Initializer
@@ -132,12 +136,12 @@ __Extends__: [TerraformProvider](#cdktf-terraformprovider)
 Create a new {@link https://www.terraform.io/docs/providers/external external} Resource.
 
 ```ts
-new ExternalProvider(scope: Construct, id: string, config?: ExternalProviderConfig)
+new provider.ExternalProvider(scope: Construct, id: string, config?: ExternalProviderConfig)
 ```
 
 * **scope** (<code>[Construct](#constructs-construct)</code>)  The scope in which to define this construct.
 * **id** (<code>string</code>)  The scoped construct ID.
-* **config** (<code>[ExternalProviderConfig](#cdktf-provider-external-externalproviderconfig)</code>)  *No description*
+* **config** (<code>[provider.ExternalProviderConfig](#cdktf-provider-external-provider-externalproviderconfig)</code>)  *No description*
   * **alias** (<code>string</code>)  Alias name. __*Optional*__
 
 
@@ -154,7 +158,7 @@ Name | Type | Description
 ### Methods
 
 
-#### resetAlias() <a id="cdktf-provider-external-externalprovider-resetalias"></a>
+#### resetAlias() <a id="cdktf-provider-external-provider-externalprovider-resetalias"></a>
 
 
 
@@ -166,7 +170,7 @@ resetAlias(): void
 
 
 
-#### protected synthesizeAttributes() <a id="cdktf-provider-external-externalprovider-synthesizeattributes"></a>
+#### protected synthesizeAttributes() <a id="cdktf-provider-external-provider-externalprovider-synthesizeattributes"></a>
 
 
 
@@ -180,7 +184,7 @@ __Returns__:
 
 
 
-## struct DataExternalConfig  <a id="cdktf-provider-external-dataexternalconfig"></a>
+## struct DataExternalConfig  <a id="cdktf-provider-external-dataexternal-dataexternalconfig"></a>
 
 
 
@@ -203,7 +207,7 @@ Name | Type | Description
 
 
 
-## struct ExternalProviderConfig  <a id="cdktf-provider-external-externalproviderconfig"></a>
+## struct ExternalProviderConfig  <a id="cdktf-provider-external-provider-externalproviderconfig"></a>
 
 
 
