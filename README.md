@@ -38,9 +38,9 @@ The Maven package is available at [https://mvnrepository.com/artifact/com.hashic
 
 ### Go
 
-The go package is generated into the [`github.com/hashicorp/cdktf-provider-external-go`](https://github.com/hashicorp/cdktf-provider-external-go) package.
+The go package is generated into the [`github.com/cdktf/cdktf-provider-external-go`](https://github.com/cdktf/cdktf-provider-external-go) package.
 
-`go get github.com/hashicorp/cdktf-provider-external-go/external`
+`go get github.com/cdktf/cdktf-provider-external-go/external`
 
 ## Docs
 
