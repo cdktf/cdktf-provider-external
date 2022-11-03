@@ -11,7 +11,7 @@ const actions = require("@actions/core");
 
 // set by the projen file that generates this script
 const CONSTRAINT = "~> 2.1";
-const FQ_PROVIDER_NAME = "external";
+const FQ_PROVIDER_NAME = "hashicorp/external";
 
 (async function main() {
   if (await newerMatchingProviderVersionExists()) {
