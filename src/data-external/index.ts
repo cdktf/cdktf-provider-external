@@ -60,7 +60,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
       terraformResourceType: 'external',
       terraformGeneratorMetadata: {
         providerName: 'external',
-        providerVersion: '2.2.2',
+        providerVersion: '2.2.3',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
