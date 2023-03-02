@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/external/d/external 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 
 dataexternal.NewDataExternal(scope Construct, id *string, config DataExternalConfig) DataExternal
 ```
@@ -287,7 +287,7 @@ func ResetWorkingDir()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.dataExternal.DataExternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 
 dataexternal.DataExternal_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 
 dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 
 dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -609,7 +609,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 
 &dataexternal.DataExternalConfig {
 	Connection: interface{},
