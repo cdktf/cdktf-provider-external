@@ -22,7 +22,6 @@ dataExternal.DataExternal(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   program: typing.List[str],
-  id: str = None,
   query: typing.Mapping[str] = None,
   working_dir: str = None
 )
@@ -40,7 +39,6 @@ dataExternal.DataExternal(
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.program">program</a></code> | <code>typing.List[str]</code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.query">query</a></code> | <code>typing.Mapping[str]</code> | A map of string values to pass to the external program as the query arguments. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.workingDir">working_dir</a></code> | <code>str</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
@@ -118,17 +116,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/exter
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.id"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `query`<sup>Optional</sup> <a name="query" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.query"></a>
 
 - *Type:* typing.Mapping[str]
@@ -171,7 +158,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/exter
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetQuery">reset_query</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetWorkingDir">reset_working_dir</a></code> | *No description.* |
 
@@ -386,12 +372,6 @@ def interpolation_for_attribute(
 
 ---
 
-##### `reset_id` <a name="reset_id" id="@cdktf/provider-external.dataExternal.DataExternal.resetId"></a>
-
-```python
-def reset_id() -> None
-```
-
 ##### `reset_query` <a name="reset_query" id="@cdktf/provider-external.dataExternal.DataExternal.resetQuery"></a>
 
 ```python
@@ -496,12 +476,11 @@ dataExternal.DataExternal.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.result">result</a></code> | <code>cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.programInput">program_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.queryInput">query_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDirInput">working_dir_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.program">program</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.query">query</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDir">working_dir</a></code> | <code>str</code> | *No description.* |
@@ -630,6 +609,16 @@ provider: TerraformProvider
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
+
+```python
+id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `result`<sup>Required</sup> <a name="result" id="@cdktf/provider-external.dataExternal.DataExternal.property.result"></a>
 
 ```python
@@ -637,16 +626,6 @@ result: StringMap
 ```
 
 - *Type:* cdktf.StringMap
-
----
-
-##### `id_input`<sup>Optional</sup> <a name="id_input" id="@cdktf/provider-external.dataExternal.DataExternal.property.idInput"></a>
-
-```python
-id_input: str
-```
-
-- *Type:* str
 
 ---
 
@@ -674,16 +653,6 @@ query_input: typing.Mapping[str]
 
 ```python
 working_dir_input: str
-```
-
-- *Type:* str
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
-
-```python
-id: str
 ```
 
 - *Type:* str
@@ -756,7 +725,6 @@ dataExternal.DataExternalConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   program: typing.List[str],
-  id: str = None,
   query: typing.Mapping[str] = None,
   working_dir: str = None
 )
@@ -774,7 +742,6 @@ dataExternal.DataExternalConfig(
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.program">program</a></code> | <code>typing.List[str]</code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.query">query</a></code> | <code>typing.Mapping[str]</code> | A map of string values to pass to the external program as the query arguments. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.workingDir">working_dir</a></code> | <code>str</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
@@ -863,21 +830,6 @@ A list of strings, whose first element is the program to run and whose subsequen
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#program DataExternal#program}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.id"></a>
-
-```python
-id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

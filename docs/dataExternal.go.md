@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/external/d/external 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.NewDataExternal(scope Construct, id *string, config DataExternalConfig) DataExternal
 ```
@@ -66,7 +66,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetQuery">ResetQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetWorkingDir">ResetWorkingDir</a></code> | *No description.* |
 
@@ -256,12 +255,6 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-external.dataExternal.DataExternal.resetId"></a>
-
-```go
-func ResetId()
-```
-
 ##### `ResetQuery` <a name="ResetQuery" id="@cdktf/provider-external.dataExternal.DataExternal.resetQuery"></a>
 
 ```go
@@ -287,7 +280,7 @@ func ResetWorkingDir()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.dataExternal.DataExternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +326,7 @@ dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -360,12 +353,11 @@ dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.result">Result</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.programInput">ProgramInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.queryInput">QueryInput</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDirInput">WorkingDirInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.program">Program</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.query">Query</a></code> | <code>*map[string]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDir">WorkingDir</a></code> | <code>*string</code> | *No description.* |
@@ -494,6 +486,16 @@ func Provider() TerraformProvider
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
+
+```go
+func Id() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Result`<sup>Required</sup> <a name="Result" id="@cdktf/provider-external.dataExternal.DataExternal.property.result"></a>
 
 ```go
@@ -501,16 +503,6 @@ func Result() StringMap
 ```
 
 - *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.StringMap
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-external.dataExternal.DataExternal.property.idInput"></a>
-
-```go
-func IdInput() *string
-```
-
-- *Type:* *string
 
 ---
 
@@ -538,16 +530,6 @@ func QueryInput() *map[string]*string
 
 ```go
 func WorkingDirInput() *string
-```
-
-- *Type:* *string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
-
-```go
-func Id() *string
 ```
 
 - *Type:* *string
@@ -609,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 &dataexternal.DataExternalConfig {
 	Connection: interface{},
@@ -620,7 +602,6 @@ import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Program: *[]*string,
-	Id: *string,
 	Query: *map[string]*string,
 	WorkingDir: *string,
 }
@@ -638,7 +619,6 @@ import "github.com/cdktf/cdktf-provider-external-go/external/v5/dataexternal"
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.program">Program</a></code> | <code>*[]*string</code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.query">Query</a></code> | <code>*map[string]*string</code> | A map of string values to pass to the external program as the query arguments. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.workingDir">WorkingDir</a></code> | <code>*string</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
@@ -727,21 +707,6 @@ A list of strings, whose first element is the program to run and whose subsequen
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#program DataExternal#program}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.id"></a>
-
-```go
-Id *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 

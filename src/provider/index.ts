@@ -41,7 +41,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'external',
       terraformGeneratorMetadata: {
         providerName: 'external',
-        providerVersion: '2.2.3',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.1'
       },
       terraformProviderSource: 'external'

@@ -66,7 +66,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetQuery">ResetQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetWorkingDir">ResetWorkingDir</a></code> | *No description.* |
 
@@ -256,12 +255,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetId` <a name="ResetId" id="@cdktf/provider-external.dataExternal.DataExternal.resetId"></a>
-
-```csharp
-private void ResetId()
-```
-
 ##### `ResetQuery` <a name="ResetQuery" id="@cdktf/provider-external.dataExternal.DataExternal.resetQuery"></a>
 
 ```csharp
@@ -360,12 +353,11 @@ DataExternal.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.result">Result</a></code> | <code>HashiCorp.Cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.programInput">ProgramInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.queryInput">QueryInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDirInput">WorkingDirInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.program">Program</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.query">Query</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDir">WorkingDir</a></code> | <code>string</code> | *No description.* |
@@ -494,6 +486,16 @@ public TerraformProvider Provider { get; }
 
 ---
 
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
+
+```csharp
+public string Id { get; }
+```
+
+- *Type:* string
+
+---
+
 ##### `Result`<sup>Required</sup> <a name="Result" id="@cdktf/provider-external.dataExternal.DataExternal.property.result"></a>
 
 ```csharp
@@ -501,16 +503,6 @@ public StringMap Result { get; }
 ```
 
 - *Type:* HashiCorp.Cdktf.StringMap
-
----
-
-##### `IdInput`<sup>Optional</sup> <a name="IdInput" id="@cdktf/provider-external.dataExternal.DataExternal.property.idInput"></a>
-
-```csharp
-public string IdInput { get; }
-```
-
-- *Type:* string
 
 ---
 
@@ -538,16 +530,6 @@ public System.Collections.Generic.IDictionary<string, string> QueryInput { get; 
 
 ```csharp
 public string WorkingDirInput { get; }
-```
-
-- *Type:* string
-
----
-
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
-
-```csharp
-public string Id { get; }
 ```
 
 - *Type:* string
@@ -620,7 +602,6 @@ new DataExternalConfig {
     TerraformProvider Provider = null,
     object[] Provisioners = null,
     string[] Program,
-    string Id = null,
     System.Collections.Generic.IDictionary<string, string> Query = null,
     string WorkingDir = null
 };
@@ -638,7 +619,6 @@ new DataExternalConfig {
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.program">Program</a></code> | <code>string[]</code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.query">Query</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of string values to pass to the external program as the query arguments. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.workingDir">WorkingDir</a></code> | <code>string</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
@@ -727,21 +707,6 @@ A list of strings, whose first element is the program to run and whose subsequen
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#program DataExternal#program}
-
----
-
-##### `Id`<sup>Optional</sup> <a name="Id" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.id"></a>
-
-```csharp
-public string Id { get; set; }
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
