@@ -23,7 +23,6 @@ DataExternal.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .program(java.util.List<java.lang.String>)
-//  .id(java.lang.String)
 //  .query(java.util.Map<java.lang.String, java.lang.String>)
 //  .workingDir(java.lang.String)
     .build();
@@ -41,7 +40,6 @@ DataExternal.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.program">program</a></code> | <code>java.util.List<java.lang.String></code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.query">query</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of string values to pass to the external program as the query arguments. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.workingDir">workingDir</a></code> | <code>java.lang.String</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
@@ -119,17 +117,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/exter
 
 ---
 
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.id"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
-
----
-
 ##### `query`<sup>Optional</sup> <a name="query" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer.parameter.query"></a>
 
 - *Type:* java.util.Map<java.lang.String, java.lang.String>
@@ -172,7 +159,6 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/exter
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetQuery">resetQuery</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetWorkingDir">resetWorkingDir</a></code> | *No description.* |
 
@@ -362,12 +348,6 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 
 ---
 
-##### `resetId` <a name="resetId" id="@cdktf/provider-external.dataExternal.DataExternal.resetId"></a>
-
-```java
-public void resetId()
-```
-
 ##### `resetQuery` <a name="resetQuery" id="@cdktf/provider-external.dataExternal.DataExternal.resetQuery"></a>
 
 ```java
@@ -466,12 +446,11 @@ DataExternal.isTerraformDataSource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.result">result</a></code> | <code>com.hashicorp.cdktf.StringMap</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.programInput">programInput</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.queryInput">queryInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDirInput">workingDirInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.program">program</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.query">query</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.property.workingDir">workingDir</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -600,6 +579,16 @@ public TerraformProvider getProvider();
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
+
+```java
+public java.lang.String getId();
+```
+
+- *Type:* java.lang.String
+
+---
+
 ##### `result`<sup>Required</sup> <a name="result" id="@cdktf/provider-external.dataExternal.DataExternal.property.result"></a>
 
 ```java
@@ -607,16 +596,6 @@ public StringMap getResult();
 ```
 
 - *Type:* com.hashicorp.cdktf.StringMap
-
----
-
-##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktf/provider-external.dataExternal.DataExternal.property.idInput"></a>
-
-```java
-public java.lang.String getIdInput();
-```
-
-- *Type:* java.lang.String
 
 ---
 
@@ -644,16 +623,6 @@ public java.util.Map<java.lang.String, java.lang.String> getQueryInput();
 
 ```java
 public java.lang.String getWorkingDirInput();
-```
-
-- *Type:* java.lang.String
-
----
-
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternal.property.id"></a>
-
-```java
-public java.lang.String getId();
 ```
 
 - *Type:* java.lang.String
@@ -729,7 +698,6 @@ DataExternalConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .program(java.util.List<java.lang.String>)
-//  .id(java.lang.String)
 //  .query(java.util.Map<java.lang.String, java.lang.String>)
 //  .workingDir(java.lang.String)
     .build();
@@ -747,7 +715,6 @@ DataExternalConfig.builder()
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.program">program</a></code> | <code>java.util.List<java.lang.String></code> | A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. |
-| <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.query">query</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | A map of string values to pass to the external program as the query arguments. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternalConfig.property.workingDir">workingDir</a></code> | <code>java.lang.String</code> | Working directory of the program. If not supplied, the program will run in the current directory. |
 
@@ -836,21 +803,6 @@ A list of strings, whose first element is the program to run and whose subsequen
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
 Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#program DataExternal#program}
-
----
-
-##### `id`<sup>Optional</sup> <a name="id" id="@cdktf/provider-external.dataExternal.DataExternalConfig.property.id"></a>
-
-```java
-public java.lang.String getId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external/d/external#id DataExternal#id}.
-
-Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
-If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
