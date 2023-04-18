@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`external`](https://www.terraform.io/docs/providers/external).
+Refer to the Terraform Registory for docs: [`external`](https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-external.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`external`](https://www.terraform.io
 
 ### ExternalProvider <a name="ExternalProvider" id="@cdktf/provider-external.provider.ExternalProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/external external}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.provider.ExternalProvider.Initializer"></a>
 
@@ -373,7 +373,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external#alias ExternalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#alias ExternalProvider#alias}
 
 ---
 
