@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/external
+// https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,13 +10,13 @@ export interface ExternalProviderConfig {
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external#alias ExternalProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#alias ExternalProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/external external}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external}
 */
 export class ExternalProvider extends cdktf.TerraformProvider {
 
@@ -30,7 +30,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/external external} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

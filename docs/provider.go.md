@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`external`](https://www.terraform.io/docs/providers/external).
+Refer to the Terraform Registory for docs: [`external`](https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-external.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`external`](https://www.terraform.io
 
 ### ExternalProvider <a name="ExternalProvider" id="@cdktf/provider-external.provider.ExternalProvider"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/external external}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.provider.ExternalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.NewExternalProvider(scope Construct, id *string, config ExternalProviderConfig) ExternalProvider
 ```
@@ -147,7 +147,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.provider.ExternalProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_IsConstruct(x interface{}) *bool
 ```
@@ -179,7 +179,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -193,7 +193,7 @@ provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.provider.ExternalProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 &provider.ExternalProviderConfig {
 	Alias: *string,
@@ -373,7 +373,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/external#alias ExternalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#alias ExternalProvider#alias}
 
 ---
 
