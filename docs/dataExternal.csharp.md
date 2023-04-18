@@ -1,3 +1,7 @@
+# `data_external`
+
+Refer to the Terraform Registory for docs: [`data_external`](https://www.terraform.io/docs/providers/external/d/external).
+
 # `dataExternal` Submodule <a name="`dataExternal` Submodule" id="@cdktf/provider-external.dataExternal"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
