@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.provider.ExternalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/v7/provider"
 
 provider.NewExternalProvider(scope Construct, id *string, config ExternalProviderConfig) ExternalProvider
 ```
@@ -147,7 +147,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.provider.ExternalProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/v7/provider"
 
 provider.ExternalProvider_IsConstruct(x interface{}) *bool
 ```
@@ -179,7 +179,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/v7/provider"
 
 provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -193,7 +193,7 @@ provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/v7/provider"
 
 provider.ExternalProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.provider.ExternalProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v6/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/v7/provider"
 
 &provider.ExternalProviderConfig {
 	Alias: *string,
