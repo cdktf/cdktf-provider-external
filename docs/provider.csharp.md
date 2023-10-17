@@ -141,6 +141,7 @@ private void ResetAlias()
 | <code><a href="#@cdktf/provider-external.provider.ExternalProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-external.provider.ExternalProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.provider.ExternalProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a ExternalProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -201,6 +202,50 @@ ExternalProvider.IsTerraformProvider(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.External;
+
+ExternalProvider.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a ExternalProvider resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the ExternalProvider to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing ExternalProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the ExternalProvider to import is found.
 
 ---
 
