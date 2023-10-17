@@ -278,6 +278,7 @@ public resetWorkingDir(): void
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement">isTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -338,6 +339,50 @@ dataExternal.DataExternal.isTerraformDataSource(x: any)
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport"></a>
+
+```typescript
+import { dataExternal } from '@cdktf/provider-external'
+
+dataExternal.DataExternal.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the DataExternal to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing DataExternal that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataExternal to import is found.
 
 ---
 

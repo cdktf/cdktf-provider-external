@@ -30,6 +30,20 @@ export class ExternalProvider extends cdktf.TerraformProvider {
   // =================
   public static readonly tfResourceType = "external";
 
+  // ==============
+  // STATIC Methods
+  // ==============
+  /**
+  * Generates CDKTF code for importing a ExternalProvider resource upon running "cdktf plan <stack-name>"
+  * @param scope The scope in which to define this construct
+  * @param importToId The construct id used in the generated config for the ExternalProvider to import
+  * @param importFromId The id of the existing ExternalProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#import import section} in the documentation of this resource for the id to use
+  * @param provider? Optional instance of the provider where the ExternalProvider to import is found
+  */
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
+        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "external", importId: importFromId, provider });
+      }
+
   // ===========
   // INITIALIZER
   // ===========
