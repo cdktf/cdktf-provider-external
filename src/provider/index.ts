@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs
+// https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +10,13 @@ export interface ExternalProviderConfig {
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#alias ExternalProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs#alias ExternalProvider#alias}
   */
   readonly alias?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external}
 */
 export class ExternalProvider extends cdktf.TerraformProvider {
 
@@ -37,7 +32,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
   * Generates CDKTF code for importing a ExternalProvider resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ExternalProvider to import
-  * @param importFromId The id of the existing ExternalProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ExternalProvider that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ExternalProvider to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -49,7 +44,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -60,7 +55,7 @@ export class ExternalProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'external',
       terraformGeneratorMetadata: {
         providerName: 'external',
-        providerVersion: '2.3.1',
+        providerVersion: '2.3.2',
         providerVersionConstraint: '~> 2.1'
       },
       terraformProviderSource: 'external'

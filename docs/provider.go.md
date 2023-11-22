@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`external`](https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs).
+Refer to the Terraform Registory for docs: [`external`](https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-external.provider"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`external`](https://registry.terrafo
 
 ### ExternalProvider <a name="ExternalProvider" id="@cdktf/provider-external.provider.ExternalProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.provider.ExternalProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.NewExternalProvider(scope Construct, id *string, config ExternalProviderConfig) ExternalProvider
 ```
@@ -148,7 +148,7 @@ func ResetAlias()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.provider.ExternalProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_IsConstruct(x interface{}) *bool
 ```
@@ -180,7 +180,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -194,7 +194,7 @@ provider.ExternalProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-external.provider.ExternalProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -208,7 +208,7 @@ provider.ExternalProvider_IsTerraformProvider(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-external.provider.ExternalProvider.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 provider.ExternalProvider_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -237,7 +237,7 @@ The construct id used in the generated config for the ExternalProvider to import
 
 The id of the existing ExternalProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -393,7 +393,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.provider.ExternalProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/provider"
+import "github.com/cdktf/cdktf-provider-external-go/external/provider"
 
 &provider.ExternalProviderConfig {
 	Alias: *string,
@@ -418,7 +418,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#alias ExternalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs#alias ExternalProvider#alias}
 
 ---
 
