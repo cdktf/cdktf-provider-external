@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`external`](https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs).
+Refer to the Terraform Registory for docs: [`external`](https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-external.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`external`](https://registry.terrafo
 
 ### ExternalProvider <a name="ExternalProvider" id="@cdktf/provider-external.provider.ExternalProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs external}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs external}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.provider.ExternalProvider.Initializer"></a>
 
@@ -237,7 +237,7 @@ The construct id used in the generated config for the ExternalProvider to import
 
 The id of the existing ExternalProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -418,7 +418,7 @@ Alias *string
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.1/docs#alias ExternalProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs#alias ExternalProvider#alias}
 
 ---
 
