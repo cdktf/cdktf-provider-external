@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
 
 dataexternal.NewDataExternal(scope Construct, id *string, config DataExternalConfig) DataExternal
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-external.dataExternal.DataExternal.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-external.dataExternal.DataExternal.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-external.dataExternal.DataExternal.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetWorkingDir()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.dataExternal.DataExternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
 
 dataexternal.DataExternal_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
 
 dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
 
 dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
 
 dataexternal.DataExternal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v9/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
 
 &dataexternal.DataExternalConfig {
 	Connection: interface{},
