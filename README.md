@@ -1,7 +1,7 @@
 
-# CDKTF prebuilt bindings for hashicorp/external provider version 2.3.2
+# CDKTF prebuilt bindings for hashicorp/external provider version 2.3.3
 
-This repo builds and publishes the [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs) bindings for [CDK for Terraform](https://cdk.tf).
+This repo builds and publishes the [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs) bindings for [CDK for Terraform](https://cdk.tf).
 
 ## Available Packages
 
@@ -63,7 +63,7 @@ This project is explicitly not tracking the Terraform external provider version 
 These are the upstream dependencies:
 
 - [CDK for Terraform](https://cdk.tf)
-- [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.2)
+- [Terraform external provider](https://registry.terraform.io/providers/hashicorp/external/2.3.3)
 - [Terraform Engine](https://terraform.io)
 
 If there are breaking changes (backward incompatible) in any of the above, the major version of this project will be bumped.

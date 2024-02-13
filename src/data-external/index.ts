@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external
+// https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface DataExternalConfig extends cdktf.TerraformMetaArguments {
   /**
   * A list of strings, whose first element is the program to run and whose subsequent elements are optional command line arguments to the program. Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#program DataExternal#program}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#program DataExternal#program}
   */
   readonly program: string[];
   /**
   * A map of string values to pass to the external program as the query arguments. If not supplied, the program will receive an empty object as its input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#query DataExternal#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#query DataExternal#query}
   */
   readonly query?: { [key: string]: string };
   /**
   * Working directory of the program. If not supplied, the program will run in the current directory.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#working_dir DataExternal#working_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#working_dir DataExternal#working_dir}
   */
   readonly workingDir?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external external}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external external}
 */
 export class DataExternal extends cdktf.TerraformDataSource {
 
@@ -49,7 +49,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataExternal resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataExternal to import
-  * @param importFromId The id of the existing DataExternal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataExternal that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataExternal to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -61,7 +61,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external external} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external external} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class DataExternal extends cdktf.TerraformDataSource {
       terraformResourceType: 'external',
       terraformGeneratorMetadata: {
         providerName: 'external',
-        providerVersion: '2.3.2',
+        providerVersion: '2.3.3',
         providerVersionConstraint: '~> 2.1'
       },
       provider: config.provider,
