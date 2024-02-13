@@ -4,12 +4,12 @@
 
 ### DataExternal <a name="DataExternal" id="@cdktf/provider-external.dataExternal.DataExternal"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external external}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external external}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-external.dataExternal.DataExternal.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.NewDataExternal(scope Construct, id *string, config DataExternalConfig) DataExternal
 ```
@@ -290,7 +290,7 @@ func ResetWorkingDir()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-external.dataExternal.DataExternal.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ dataexternal.DataExternal_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-external.dataExternal.DataExternal.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ dataexternal.DataExternal_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-external.dataExternal.DataExternal.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 dataexternal.DataExternal_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataExternal to import.
 
 The id of the existing DataExternal that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,7 +645,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-external.dataExternal.DataExternalConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-external-go/external/v10/dataexternal"
+import "github.com/cdktf/cdktf-provider-external-go/external/dataexternal"
 
 &dataexternal.DataExternalConfig {
 	Connection: interface{},
@@ -760,7 +760,7 @@ A list of strings, whose first element is the program to run and whose subsequen
 
 Terraform does not execute the program through a shell, so it is not necessary to escape shell metacharacters nor add quotes around arguments containing spaces.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#program DataExternal#program}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#program DataExternal#program}
 
 ---
 
@@ -776,7 +776,7 @@ A map of string values to pass to the external program as the query arguments.
 
 If not supplied, the program will receive an empty object as its input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#query DataExternal#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#query DataExternal#query}
 
 ---
 
@@ -790,7 +790,7 @@ WorkingDir *string
 
 Working directory of the program. If not supplied, the program will run in the current directory.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.2/docs/data-sources/external#working_dir DataExternal#working_dir}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/external/2.3.3/docs/data-sources/external#working_dir DataExternal#working_dir}
 
 ---
 
